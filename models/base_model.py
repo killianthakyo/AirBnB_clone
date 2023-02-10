@@ -14,9 +14,17 @@ class BaseModel():
         """
         Initialise attributes
         """
-        self.id = str(uuid4())
-        self.created_at = datetime.today()
-        self.updated_at = datetime.today()
+        if (len(kwargs) != 0):
+            frm = "%Y-%m-%dT%H:%M:%S.%f"
+            kwargs["created_at"] = datetime.strptime(kwargs["created_at"], frm)
+            kwargs["updated_at"] = datetime.strptime(kwargs["updated_at"], frm)
+            for key, value in kwargs.items():
+                if key != '__class__':
+                    setattr(self, key, value)
+        else:
+            self.id = str(uuid4())
+            self.created_at = datetime.today()
+            self.updated_at = datetime.today()
 
     def save(self):
         """
