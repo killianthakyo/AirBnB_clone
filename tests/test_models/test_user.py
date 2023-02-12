@@ -41,5 +41,6 @@ class Test_User(unittest.TestCase):
         """ Test documentation """
         self.assertIsNotNone(User.__doc__)
 
+
 if __name__ == '__main__':
     unittest.main()

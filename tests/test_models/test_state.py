@@ -35,5 +35,6 @@ class Test_State(unittest.TestCase):
         """ Test documentation """
         self.assertIsNotNone(State.__doc__)
 
+
 if __name__ == '__main__':
     unittest.main()

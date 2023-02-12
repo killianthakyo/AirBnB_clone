@@ -35,5 +35,6 @@ class Test_Amenity(unittest.TestCase):
         """ Test documentation """
         self.assertIsNotNone(Amenity.__doc__)
 
+
 if __name__ == '__main__':
     unittest.main()

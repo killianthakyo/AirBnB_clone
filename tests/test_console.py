@@ -21,5 +21,6 @@ class Test_Amenity(unittest.TestCase):
         self.assertIsNotNone(console.__doc__)
         self.assertIsNotNone(console.HBNBCommand.__doc__)
 
+
 if __name__ == '__main__':
     unittest.main()
