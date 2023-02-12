@@ -4,6 +4,7 @@ Class to serialize instances to JSON and deserialise JSON to instances
 """
 import json
 from models.base_model import BaseModel
+from models.base_model import User
 import models
 
 
