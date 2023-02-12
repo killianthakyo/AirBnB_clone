@@ -5,6 +5,11 @@ Class to serialize instances to JSON and deserialise JSON to instances
 import json
 from models.base_model import BaseModel
 from models.base_model import User
+from models.state import State
+from models.city import City
+from model.amenity import Amenity
+from models.place import Place
+from models.review import Review
 import models
 
 
