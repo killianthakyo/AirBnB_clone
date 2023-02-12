@@ -9,7 +9,6 @@ import models
 
 class FileStorage():
     """Instanciate FileStorage class"""
-    
     __file_path = "file.json"
     __objects = {}
 
