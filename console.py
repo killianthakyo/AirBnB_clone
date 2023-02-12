@@ -79,6 +79,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** instance id missing **")
         else:
             print("** class doesn't exist **")
+
     def do_all(self, args):
         """
          Create an instance of BaseModel if class exists
@@ -89,8 +90,9 @@ class HBNBCommand(cmd.Cmd):
             obj_list = [str(obj) for key, obj in objdict.items()]
             print(obj_list)
         elif args in models.classes:
-            obj_list = [str(obj) for key, obj in objdict.items() if
-                    type(obj).__name__ == argl[0]]
+            obj_list = [
+                    str(obj) for key, obj in objdict.items()
+                    if type(obj).__name__ == argl[0]]
             print(obj_list)
         else:
             print("** class doesn't exist **")
