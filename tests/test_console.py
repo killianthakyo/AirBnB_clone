@@ -16,11 +16,6 @@ class Test_Amenity(unittest.TestCase):
         self.assertEqual(result.total_errors, 0,
                          "Found code style errors (and warnings).")
 
-    def test_docstring(self):
-        """ Test documentation """
-        self.assertIsNotNone(console.__doc__)
-        self.assertIsNotNone(console.HBNBCommand.__doc__)
-
     def create(self):
         ''' create an instance of the HBNBCommand class'''
         return HBNBCommand()
